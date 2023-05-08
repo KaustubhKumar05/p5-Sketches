@@ -1,18 +1,10 @@
-let x;
-let y;
-const stepSize = 4;
-
 function setup() {
   createCanvas(400, 400);
   background(51);
-  x = width / 2;
-  y = height / 2;
 }
 
 function draw() {
-  stroke(200, 100);
+  stroke(255, 100);
   strokeWeight(2);
-  point(x, y);
-  x += (mouseX > x ? 1 : -1) * random(1);
-  y += (mouseY > y ? 1 : -1) * random(1);
+  point(height / 2, width / 2);
 }
